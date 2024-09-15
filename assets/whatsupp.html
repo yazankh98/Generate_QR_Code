@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <a href="./../index.html">QR for website</a>
+        <a href="./whatsupp.html">QR for WhatsApp</a>
+    </nav>
+    <div class="container">
+        <h1>Generate WhatsApp QR Code</h1>
+
+        <label for="phone-number">Enter phone number (international format):</label>
+        <input type="text" id="phone-number" placeholder="+963-XXXXXXXX" />
+        <button onclick="generateQRCode()">Generate QR Code</button>
+
+        <div id="qrcode"></div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script src="https://unpkg.com/libphonenumber-js@1.10.15/bundle/libphonenumber-js.min.js"></script>
+    <script src="./whatsupp.js"></script>
+</body>
+
+</html>
